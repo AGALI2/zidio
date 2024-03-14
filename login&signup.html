@@ -1,4 +1,15 @@
-<link href="body.css"  rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise AI v0.01, ai.mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/photo-1497656387909-356336b9455f.jpeg" type="image/x-icon">
+  <meta name="description" content="A cutting-edge location tracking application with seamless login and sign up features, designed to revolutionize the way you track and manage locations.">
+  <title>Trackify</title>
+  <link href="body.css"  rel="stylesheet" type="text/css">
 <br>
 <br>
     <div class="cont">
@@ -46,12 +57,23 @@
                     <input type="password" />
                 </label>
                 <button type="button" class="submit">Sign Up</button>
-                
+
             </div>
         </div>
     </div>
 	
     <script>
+        function login(){
+            var email = document.getElementById("Email").value;
+            var password = document.getElementById("password").value;
+            if (email =="admin@gmail.com" && password =="admin123"){
+                Window.location.assign("index.html");
+                alert("login sucessfully");
+            }
+            else{
+                alert("Invalid Information");
+            }
+        };
         document.querySelector('.img__btn').addEventListener('click', function() {
             document.querySelector('.cont').classList.toggle('s--signup');
         });
